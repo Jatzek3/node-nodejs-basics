@@ -1,5 +1,9 @@
+import fs from 'node:fs';
+
+
 const parseEnv = () => {
-    // Write your code here 
+    const data = fs.readFileSync('.env', 'utf-8');
+    console.log(data)
 };
 
 parseEnv();
